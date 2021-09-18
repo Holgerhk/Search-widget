@@ -1,0 +1,99 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: #892cff;
+}
+
+.input {
+  height: 60px;
+  width: 60px;
+  position: relative;
+  top: 420px;
+  left: 930px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.img {
+  height: 38px;
+  width: 38px;
+  position: relative;
+  left: 875px;
+  top: 435px;
+}
+
+.imgBig {
+  animation-name: bigIcon;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.inputBig {
+  animation-name: big;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.imgSmall {
+  animation-name: smallIcon;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.inputSmall {
+  animation-name: small;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes big {
+  0% {
+    width: 60px;
+    left: 930px;
+  }
+
+  100% {
+    width: 300px;
+    left: 810px;
+  }
+}
+
+@keyframes bigIcon {
+  0% {
+    left: 875px;
+  }
+
+  100% {
+    left: 760px;
+  }
+}
+
+@keyframes small {
+  0% {
+    width: 300px;
+    left: 810px;
+  }
+
+  100% {
+    width: 60px;
+    left: 930px;
+  }
+}
+
+@keyframes smallIcon {
+  0% {
+    left: 760px;
+  }
+
+  100% {
+    left: 875px;
+  }
+}
